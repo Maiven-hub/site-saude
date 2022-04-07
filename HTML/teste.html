@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../javaScript/functions.js"></script>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/testeImc.css">
+    <link rel="shortcut icon" type="Imagens/png" href="../Imagens/icone.png">
+    <title>Health+ - IMC</title>
+</head>
+<body>
+    <div class="gridContainer">
+        <header class="header">
+            <a href="../index.html">
+               <img id="logo" src="../Imagens/logo.png" alt="Logo">
+            </a> 
+            <nav class="menu">
+               <ul>
+                    <li><a href="../HTML/login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="titul">
+                <h1>Consulte sua taxa de</h1>
+                <h2>obesidade de acordo com nosso cálculo iMC</h2>
+            </div>
+        <div>
+            <div class="entry">
+                <input class="padraoCaixa" type="number" placeholder="Informe sua altura" id="altura">
+                <input class="padraoCaixa" type="number" placeholder="Informe seu peso" id="peso">
+                <button class="button" onclick="imc()">Enviar</button>
+                <div id="res"></div> 
+                <div id="magreza"></div>
+            </div>
+
+            
+    </main>
+    </div>
+</body>
+</html>

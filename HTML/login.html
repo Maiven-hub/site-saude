@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styleLogin.css">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <script type="text/javascript" src="../javaScript/functions.js"></script>
+    <link rel="shortcut icon" type="Imagens/png" href="../Imagens/icone.png">
+    <title>Health+ - Login</title>
+</head>
+<body>
+    <div class="gridContainer">
+    <header class="header">
+        <a href="../index.html">
+             <img id="logo" src="../Imagens/logo.png" alt="Logo">
+        </a> 
+        <nav class="menu">
+            <ul>
+                <li><a href="../HTML/imc.html">Sobre IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div>
+            <h1 class="fonteBold" id="TLocal">Venha nos conhecer!</h1>
+            <iframe id="localizacao" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12291.415119003535!2d-46.79035751460147!3d-23.666667978060428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53a602971645%3A0x87c582407a9da56f!2sCentro%20Universit%C3%A1rio%20Adventista%20de%20S%C3%A3o%20Paulo%20-%20UNASP-SP!5e0!3m2!1spt-PT!2sbr!4v1648532769211!5m2!1spt-PT!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>  
+        <div class="form">
+            <div>
+                <h1 class="fonteBold" id="login">Login</h1>
+            </div>
+            
+            <form>
+                
+                <div class="par">
+                    <input class="padraoCaixa" type="text" placeholder="Nome" id="nome">
+                    <input class="padraoCaixa" type="text" placeholder="Sobrenome" id="sobrenome">
+                </div>
+
+                <div class="par">
+                
+                        <input class="padraoCaixa" type="email" placeholder="Email" id="email">
+                    
+                        <input class="padraoCaixa" type="date" id="dataNasc">
+                    
+                </div>
+
+                <div class="par">
+                    <input class="padraoCaixa" id="cpf" onkeypress="danone()" onkeypress="numb()" type="number" placeholder="Digite seu CPF"  maxlength="14" >
+
+                    <select class="padraoCaixa" id="sexo">
+                        <option selected disabled value="">Informe seu sexo</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                    
+                <div class="par">
+                    <input class="padraoCaixa" id="endereco" type="text" placeholder="Endereço">
+
+                    <select class="padraoCaixa" id="estado">
+                        <option selected disabled value="">Selecione seu estado</option>
+                        <option>Acre - AC</option>
+                        <option>Alagoas - AL</option>
+                        <option>Amapá - AP</option>
+                        <option>Amazonas - AM</option>
+                        <option>Bahia - BA</option>
+                        <option>Ceará - CE</option>
+                        <option>Distrito Federal - DF</option>
+                        <option>Espírito Santo - ES</option>
+                        <option>Goiás - GO</option>
+                        <option>Maranhão - MA</option>
+                        <option>Mato Grosso - MT</option>
+                        <option>Mato Grosso do Sul - MS</option>
+                        <option>Minas Gerais - MG</option>
+                        <option>Pará - PA</option>
+                        <option>Paraíba - PB</option>
+                        <option>Paraná - PR</option>
+                        <option>Pernambuco - PE</option>
+                        <option>Piauí - PI</option>
+                        <option>Rio de Janeiro - RJ</option>
+                        <option>Rio Grande do Norte - RN</option>
+                        <option>Rio Grande do Sul - RS</option>
+                        <option>Rondônia - RO</option>
+                        <option>Roraima - RR</option>
+                        <option>Santa Catarina - SC</option>
+                        <option>São Paulo - SP</option>
+                        <option>Sergipe - SE</option>
+                        <option>Tocantins - TO</option>
+                    </select>
+                    
+                </div>
+                
+                <div class="par">
+                    <input class="padraoCaixa" id="cidade" type="text" placeholder="Escreva o nome da cidade">
+
+                    <input class="padraoCaixa" id="cep" onkeypress="CEP()" type="text" placeholder="Escreva seu CEP" maxlength="9">
+
+                </div>
+        
+                <div>
+                    <button type="submit" class="botao">Concluir</button>
+                </div>
+            </form>
+        </div> 
+    </main>
+</div>
+</body>
+</html>

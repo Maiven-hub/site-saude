@@ -1,0 +1,203 @@
+@keyframes sla {
+
+    0% {
+        background-image: url(../Imagens/background365.png);
+    }
+    33% {
+        background-image: url(../Imagens/background247.png);
+    }
+    66% {
+        background-image: url(../Imagens/background492.png);
+    }
+    100% {
+        background-image: url(../Imagens/background365.png);
+    }
+
+}
+
+@keyframes navAnim {
+    0% {
+        opacity: 0;
+        margin-top: -150px;
+    }
+    100% {
+        opacity: 100;
+        margin-top: 0;
+    }
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden; 
+
+    animation-name: sla;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    font-family: 'Gilroy', times, sans-serif;
+    color: #fff;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 50vh 10vh;
+    grid-template-areas: "h"
+                         "h1"
+                         "c"
+                         "b";
+    gap: 5px;
+}
+
+header {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: h;
+
+    animation-name: navAnim;
+    animation-duration: 6000ms;
+}
+
+
+#h1 {
+    grid-area: h1;
+}
+
+.conteudo {
+    grid-area: c;
+}
+
+.botao {
+    grid-area: b;
+}
+
+.fonteBold{
+    font-family: 'Gilroy Bold', times, sans-serif;
+    color: #fff;
+}
+
+.menu {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    font-family: 'Gilroy', times, sans-serif;
+    text-decoration: none;
+    
+}
+
+
+.menu a:hover {
+    color: #01c4ff;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+
+    transition: .2s linear;
+}
+
+.menu li {
+    display: inline;
+    padding: 20px;
+    
+}
+
+#logo {
+    width: 120px;
+    margin-left: 25px;
+    margin-top: 12px;
+
+    transition: width 300ms;
+    transition-delay: 100ms;
+}
+
+#logo:hover {
+    cursor: pointer;
+    width: 150px;
+}
+
+.conteudo h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 180px;
+}
+
+.conteudo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+    grid-area: h2;
+}
+
+.conteudo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.botao a{
+    position: absolute;
+    margin-left: 40vw;
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 10px 40px;
+    border: 4px solid #fff;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.botao a:hover {
+    border-color: rgb(252, 3, 77);
+    color: rgb(252, 3, 77);
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../FontesDeTexto/Gilroy-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
+    font-style: normal;
+}
+
+
+
+
+
+ 

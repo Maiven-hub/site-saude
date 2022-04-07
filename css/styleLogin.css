@@ -1,0 +1,220 @@
+@keyframes sla {
+
+    0% {
+        background-image: url(../Imagens/BackgroundLogin1.png);
+    }
+    33% {
+        background-image: url(../Imagens/BackgroundLogin2.png);
+    }
+    66% {
+        background-image: url(../Imagens/BackgroundLogin3.png);
+    }
+    100% {
+        background-image: url(../Imagens/BackgroundLogin1.png);
+    }
+
+}
+
+@keyframes navAnim {
+    0% {
+        opacity: 0;
+        margin-top: -150px;
+    }
+    100% {
+        opacity: 100;
+        margin-top: 0;
+    }
+}
+
+
+
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    overflow: hidden; 
+
+    animation-name: sla;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body{
+    font-family: 'Gilroy', times, sans-serif;
+    color: #fff;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 80vh;
+    grid-template-areas: "h h"
+                         "f l";
+    gap: 10px 10px;
+}
+
+header {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: h;
+
+    animation-name: navAnim;
+    animation-duration: 6000ms;
+}
+
+
+#TLocal {
+    position: absolute;
+    margin-top: 40px;
+    right: 150px;
+
+    font-size: 50px;
+}
+
+#localizacao { 
+    position: absolute;
+    margin-top: 90px;
+    right: 175px;
+
+    padding: 12.5px;
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 55px;
+}
+
+.fonteBold {
+    font-family: 'Gilroy Bold', times, sans-serif;
+}
+
+.padraoCaixa {
+    color:#000000;
+    font-weight: 170;
+    font-size: 15px;
+    border: 0;
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+}
+
+#logo {
+    width: 120px;
+    margin-left: 25px;
+    margin-top: 12px;
+    
+    transition: width 300ms;
+    transition-delay: 100ms;
+}
+
+#logo:hover {
+    cursor: pointer;
+    width: 150px;
+}
+
+.menu {
+    position: absolute;
+    margin-top: 50px;
+    right: 20px;
+    bottom: 25px;
+}
+
+.menu ul {
+    list-style: none;
+
+    
+    animation-name: navAnim;
+    animation-duration: 6000ms;
+    animation-delay: 150ms;
+}
+
+.menu a {
+    color: #fff;
+    font-family: 'Gilroy', times, sans-serif;
+    text-decoration: none;
+    
+}
+
+
+.menu a:hover {
+    color: #01c4ff;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+
+    transition: .2s linear;
+}
+
+.menu li {
+    display: inline;
+    padding: 20px;
+    
+}
+
+#login {
+    font-size: 45px;
+    padding: 10px;
+    margin-left: 135px;
+}
+
+.form {
+    margin-top: 30px;
+    margin-left: 50px;
+
+    grid-area: f;
+}
+
+.par {
+    padding: 1px;
+}
+
+.botao {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 50px;
+    margin-left: 120px;
+    margin-top: 2px;
+    font-size: 18px;
+    
+}
+
+.botao:hover {
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.616);
+    color: rgba(255, 255, 255, 0.616);
+}
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../FontesDeTexto/Gilroy-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
+}
+
+
+@media (max-height: 651px){
+    body {
+        height: 88vh;
+    }
+}
+
+

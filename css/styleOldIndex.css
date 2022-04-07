@@ -1,0 +1,88 @@
+
+body{
+    background-image: url("../imagens/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fontePadrao {
+    color:#ffffff;
+    font-weight: 170;
+}
+
+.fontePadraoBold {
+    color: #ffffff;
+    font-weight: 650;
+}
+
+.botaoNav {
+    color: #ffffff;
+    font-size: 27px;
+    text-decoration: none;
+    width: 100px;
+    
+}
+
+.botaoNav:hover {
+    color: #60a2d8;
+}
+
+#tabela {
+    position: relative;
+    right: -1150px;
+    top: -50px;
+    font-weight: 400;
+    font-size: 16px;
+    width: 90%;
+    max-width: 100px;
+}
+
+#login {
+    position: relative;
+    right: -1010px;
+    top: -50px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#logo {
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 10em;
+}
+
+#logo {
+    width: 120px;
+    margin-left: 25px;
+    margin-top: 12px;
+    transition: width .2s;
+    transition-delay: .1s;
+}
+
+#logo:hover {
+    cursor: pointer;
+    width: 150px;
+}
+
+#slogan {
+    font-size: 55px;
+    margin-left: 25px;
+    margin-top: 150px;
+}
+    
+#nossaMissao {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+#missao {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-left: 25px;
+}
+
+#estatua {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 610px;
+}

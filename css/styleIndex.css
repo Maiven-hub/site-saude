@@ -1,0 +1,266 @@
+@keyframes sla {
+
+    0% {
+        background-image: url(../Imagens/background1.png);
+    }
+    33% {
+        background-image: url(../Imagens/background1.2);
+    }
+    66% {
+        background-image: url(../Imagens/background1.3);
+    }
+    100% {
+        background-image: url(../Imagens/background1.png);
+    }
+
+}
+
+@keyframes sloganAnim {
+
+    from {
+        margin-top: 1000px;
+    }
+    to {
+        margin-top: 0px;
+    }
+
+}
+
+@keyframes navAnim {
+    0% {
+        opacity: 0;
+        margin-top: -150px;
+    }
+    100% {
+        opacity: 100;
+        margin-top: 0;
+    }
+}
+
+@keyframes torsoDU {
+    0% {
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: -100px;
+    }
+}
+
+@keyframes missao {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    
+    50% {
+        transform: translateY(-15px);
+    }
+
+    
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden; 
+
+    animation-name: sla;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Gilroy', times, sans-serif;
+}
+
+.fonteBold {
+    font-family: 'Gilroy Bold', times, sans-serif;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 10vh 80vh;
+    grid-template-areas: "h h h"
+                         "m i a";
+    gap: 30px 10px;
+}
+
+header {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: h;
+
+    animation-name: navAnim;
+    animation-duration: 6000ms;
+}
+
+main {
+    padding-left: 10px;
+    margin-top: 300px;
+    grid-area: m;
+}
+
+.parMissao {
+    font-size: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    animation-name: missao;
+    animation-duration: 6500ms;
+}
+
+.parMissao h1 {
+    font-size: 40px;
+}
+
+
+.estatua {
+    grid-area: i;
+}
+
+#saude {
+    transform: translateY(0px);
+    animation: float 6ms ease-in-out infinite;
+    animation-duration: 3930ms;
+}
+
+#torso {
+    position: absolute;
+    z-index: -1;
+    
+    margin-top: -100px;
+    margin-left: -250px;
+    animation-name: torsoDU;
+    animation-duration: 4500ms;
+    
+}
+
+#logo {
+    width: 120px;
+    margin-left: 25px;
+    margin-top: 12px;
+
+    transition: width 300ms;
+    transition-delay: 100ms;
+}
+
+#logo:hover {
+    cursor: pointer;
+    width: 150px;
+}
+
+.menu {
+    position: absolute;
+    margin-top: 50px;
+    right: 20px;
+    bottom: 25px;
+}
+
+.menu ul {
+    list-style: none;
+
+    
+    animation-name: navAnim;
+    animation-duration: 6000ms;
+    animation-delay: 150ms;
+}
+
+.menu a {
+    color: #fff;
+    font-family: 'Gilroy', times, sans-serif;
+    text-decoration: none;
+    
+}
+
+
+.menu a:hover {
+    color: #01c4ff;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+
+    transition: .2s linear;
+}
+
+.menu li {
+    display: inline;
+    padding: 20px;
+    
+}
+
+.slogan {
+    line-height: 25px;
+    font-size: 25px;
+    position: absolute;
+
+    animation-name: sloganAnim;
+    animation-duration: 6000ms;
+}
+
+.slogan h3 {
+    margin-top: 50px;
+}
+
+.slogan h2 {
+    margin-left: -5px;
+    font-size: 70px;
+    font-style: italic;
+    color: #647ce4;
+}
+
+.slogan p {
+    margin-left: -10px;
+    font-size: 210px;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../FontesDeTexto/Gilroy-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
+    font-style: normal;
+}
+
+
+
+
+
